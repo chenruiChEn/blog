@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.8.0">
+  <meta charset="utf-8">
+  
+
+  
+  <title>解决各种IE兼容 | Hexo</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="解决各种IE兼容问题,IE6,IE7,IE8,IE9,IE10 http://www.cnblogs.com/mfc-itblog/p/5949251.html  1234567892. Google Chrome Frame也可以让IE用上Chrome的引擎:&amp;lt;meta http-equiv=“X-UA-Compatible” content=“chrome=1″ /&amp;gt;&amp;lt;met">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决各种IE兼容">
+<meta property="og:url" content="http://blog.cr89.top/2019/01/03/解决各种IE兼容/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="解决各种IE兼容问题,IE6,IE7,IE8,IE9,IE10 http://www.cnblogs.com/mfc-itblog/p/5949251.html  1234567892. Google Chrome Frame也可以让IE用上Chrome的引擎:&amp;lt;meta http-equiv=“X-UA-Compatible” content=“chrome=1″ /&amp;gt;&amp;lt;met">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-01-03T07:02:08.000Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="解决各种IE兼容">
+<meta name="twitter:description" content="解决各种IE兼容问题,IE6,IE7,IE8,IE9,IE10 http://www.cnblogs.com/mfc-itblog/p/5949251.html  1234567892. Google Chrome Frame也可以让IE用上Chrome的引擎:&amp;lt;meta http-equiv=“X-UA-Compatible” content=“chrome=1″ /&amp;gt;&amp;lt;met">
+  
+    <link rel="alternate" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="/favicon.png">
+  
+  
+    <link href="//fonts.googleapis.com/css?family=Source+Code+Pro" rel="stylesheet" type="text/css">
+  
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+</html>
+<body>
+  <div id="container">
+    <div id="wrap">
+      <header id="header">
+  <div id="banner"></div>
+  <div id="header-outer" class="outer">
+    <div id="header-title" class="inner">
+      <h1 id="logo-wrap">
+        <a href="/" id="logo">Hexo</a>
+      </h1>
+      
+    </div>
+    <div id="header-inner" class="inner">
+      <nav id="main-nav">
+        <a id="main-nav-toggle" class="nav-icon"></a>
+        
+          <a class="main-nav-link" href="/">Home</a>
+        
+          <a class="main-nav-link" href="/archives">Archives</a>
+        
+      </nav>
+      <nav id="sub-nav">
+        
+          <a id="nav-rss-link" class="nav-icon" href="/atom.xml" title="RSS Feed"></a>
+        
+        <a id="nav-search-btn" class="nav-icon" title="搜索"></a>
+      </nav>
+      <div id="search-form-wrap">
+        <form action="//google.com/search" method="get" accept-charset="UTF-8" class="search-form"><input type="search" name="q" class="search-form-input" placeholder="Search"><button type="submit" class="search-form-submit">&#xF002;</button><input type="hidden" name="sitesearch" value="http://blog.cr89.top"></form>
+      </div>
+    </div>
+  </div>
+</header>
+      <div class="outer">
+        <section id="main"><article id="post-解决各种IE兼容" class="article article-type-post" itemscope="" itemprop="blogPost">
+  <div class="article-meta">
+    <a href="/2019/01/03/解决各种IE兼容/" class="article-date">
+  <time datetime="2019-01-03T07:00:27.000Z" itemprop="datePublished">2019-01-03</time>
+</a>
+    
+  </div>
+  <div class="article-inner">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      解决各种IE兼容
+    </h1>
+  
+
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h1 id="解决各种IE兼容问题-IE6-IE7-IE8-IE9-IE10"><a href="#解决各种IE兼容问题-IE6-IE7-IE8-IE9-IE10" class="headerlink" title="解决各种IE兼容问题,IE6,IE7,IE8,IE9,IE10"></a>解决各种IE兼容问题,IE6,IE7,IE8,IE9,IE10</h1><ul>
+<li><a href="http://www.cnblogs.com/mfc-itblog/p/5949251.html" target="_blank" rel="noopener">http://www.cnblogs.com/mfc-itblog/p/5949251.html</a></li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">2. Google Chrome Frame也可以让IE用上Chrome的引擎:</span><br><span class="line"></span><br><span class="line">&lt;meta http-equiv=“X-UA-Compatible” content=“chrome=1″ /&gt;</span><br><span class="line"></span><br><span class="line">&lt;meta http-equiv=”X-UA-Compatible” content=”IE=edge,chrome=1″ /&gt;</span><br><span class="line">创建html5时发现这么一句话，百度如下：</span><br><span class="line">这样写可以达到的效果是如果安装了GCF，则使用GCF来渲染页面，如果没安装GCF，则使用最高版本的IE内核进行渲染。</span><br><span class="line">Google Chrome Frame（谷歌内嵌浏览器框架GCF）。</span><br><span class="line">这个插件可以让用户的IE浏览器外不变，但用户在浏览网页时，实际上使用的是Google Chrome浏览器内核，而且支持IE6、7、8等多个版本的IE浏览器。</span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+    <footer class="article-footer">
+      <a data-url="http://blog.cr89.top/2019/01/03/解决各种IE兼容/" data-id="cjqgc4lc500027inx25cahswd" class="article-share-link">Share</a>
+      
+      
+    </footer>
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/01/03/hello-world/" id="article-nav-older" class="article-nav-link-wrap">
+      <strong class="article-nav-caption">Older</strong>
+      <div class="article-nav-title">Hello World</div>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+</section>
+        
+          <aside id="sidebar">
+  
+    
+
+  
+    
+
+  
+    
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">归档</h3>
+    <div class="widget">
+      <ul class="archive-list"><li class="archive-list-item"><a class="archive-list-link" href="/archives/2019/01/">一月 2019</a></li><li class="archive-list-item"><a class="archive-list-link" href="/archives/2018/02/">二月 2018</a></li></ul>
+    </div>
+  </div>
+
+
+  
+    
+  <div class="widget-wrap">
+    <h3 class="widget-title">最新文章</h3>
+    <div class="widget">
+      <ul>
+        
+          <li>
+            <a href="/2019/01/03/解决各种IE兼容/">解决各种IE兼容</a>
+          </li>
+        
+          <li>
+            <a href="/2019/01/03/hello-world/">Hello World</a>
+          </li>
+        
+          <li>
+            <a href="/2018/02/03/3.0 css 代码规范/">css 代码规范</a>
+          </li>
+        
+      </ul>
+    </div>
+  </div>
+
+  
+</aside>
+        
+      </div>
+      <footer id="footer">
+  
+  <div class="outer">
+    <div id="footer-info" class="inner">
+      &copy; 2019 John Doe<br>
+      Powered by <a href="http://hexo.io/" target="_blank">Hexo</a>
+    </div>
+  </div>
+</footer>
+    </div>
+    <nav id="mobile-nav">
+  
+    <a href="/" class="mobile-nav-link">Home</a>
+  
+    <a href="/archives" class="mobile-nav-link">Archives</a>
+  
+</nav>
+    
+
+<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+
+
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+  <script src="/fancybox/jquery.fancybox.pack.js"></script>
+
+
+<script src="/js/script.js"></script>
+
+
+
+  </div>
+</body>
+</html>
